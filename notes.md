@@ -39,3 +39,9 @@ public class DataContext : DbContext
   - Migrations - gives us the ability to create a DB schema and automatically create our DB (this is called "code first")
 - We specifically want `Microsoft.EntityFrameworkCore.Sqlite`, NOT `Microsoft.EntityFrameworkCore.Sqlite.Core` or anything else
 - by convention, EntityFramework will use "Id" as the primary key and will autoincrement
+- `dotnet ef migrations add InitialCreate -o Data/Migration`
+- `dotnet ef database update`
+
+### Angular
+
+- http requests always\* complete, so we don't have to manually unsubscribe
